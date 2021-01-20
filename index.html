@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+      <head>
+            <title>PicPic</title>
+            <script>
+                  window.img_paths={"name":"assets","type":"directory","size":"3.55MB","children":[{"name":"294910.jpg","type":"file","extension":"jpg","size":"137.14KB","dimension":"1366x768","path":"294910.jpg"},{"name":"294911.jpg","type":"file","extension":"jpg","size":"259.21KB","dimension":"1366x768","path":"294911.jpg"},{"name":"305528.jpg","type":"file","extension":"jpg","size":"152.19KB","dimension":"1366x768","path":"305528.jpg"},{"name":"305902.jpg","type":"file","extension":"jpg","size":"120.88KB","dimension":"1366x768","path":"305902.jpg"},{"name":"307429.jpg","type":"file","extension":"jpg","size":"136KB","dimension":"1366x768","path":"307429.jpg"},{"name":"308043.jpg","type":"file","extension":"jpg","size":"135.29KB","dimension":"1366x768","path":"308043.jpg"},{"name":"311036.jpg","type":"file","extension":"jpg","size":"154.4KB","dimension":"1366x768","path":"311036.jpg"},{"name":"312496.jpg","type":"file","extension":"jpg","size":"148.66KB","dimension":"1366x768","path":"312496.jpg"},{"name":"312784.jpg","type":"file","extension":"jpg","size":"133.33KB","dimension":"1366x768","path":"312784.jpg"},{"name":"313880.jpg","type":"file","extension":"jpg","size":"99.4KB","dimension":"1366x768","path":"313880.jpg"},{"name":"315160.jpg","type":"file","extension":"jpg","size":"66.99KB","dimension":"1366x768","path":"315160.jpg"},{"name":"315907.jpg","type":"file","extension":"jpg","size":"129.21KB","dimension":"1366x768","path":"315907.jpg"},{"name":"316425.jpg","type":"file","extension":"jpg","size":"110.79KB","dimension":"1366x768","path":"316425.jpg"},{"name":"316891.jpg","type":"file","extension":"jpg","size":"129.85KB","dimension":"1366x768","path":"316891.jpg"},{"name":"317076.jpg","type":"file","extension":"jpg","size":"89.11KB","dimension":"1366x768","path":"317076.jpg"},{"name":"317220.jpg","type":"file","extension":"jpg","size":"205.51KB","dimension":"1366x768","path":"317220.jpg"},{"name":"317350.jpg","type":"file","extension":"jpg","size":"147.6KB","dimension":"1366x768","path":"317350.jpg"},{"name":"317459.jpg","type":"file","extension":"jpg","size":"125.73KB","dimension":"1366x768","path":"317459.jpg"},{"name":"318667.jpg","type":"file","extension":"jpg","size":"103.01KB","dimension":"1366x768","path":"318667.jpg"},{"name":"318765.jpg","type":"file","extension":"jpg","size":"83.52KB","dimension":"1366x768","path":"318765.jpg"},{"name":"318786.jpg","type":"file","extension":"jpg","size":"161.71KB","dimension":"1366x768","path":"318786.jpg"},{"name":"319189.jpg","type":"file","extension":"jpg","size":"109.36KB","dimension":"1366x768","path":"319189.jpg"},{"name":"321104.jpg","type":"file","extension":"jpg","size":"114.67KB","dimension":"1366x768","path":"321104.jpg"},{"name":"321119.jpg","type":"file","extension":"jpg","size":"88.26KB","dimension":"1366x768","path":"321119.jpg"},{"name":"322353.jpg","type":"file","extension":"jpg","size":"147.96KB","dimension":"1366x768","path":"322353.jpg"},{"name":"322444.jpg","type":"file","extension":"jpg","size":"133.76KB","dimension":"1366x768","path":"322444.jpg"},{"name":"323298.jpg","type":"file","extension":"jpg","size":"130.35KB","dimension":"1366x768","path":"323298.jpg"}]}
+            </script>
+      </head>
+
+      <script src='./libs/js/include.js'></script>
+
+      <link
+            rel="shortcut icon"
+            href="./favicon.ico"
+      >
+
+      <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1"
+      >
+
+      <style>
+            @import './components/Detail/index.css';
+@import './components/Empty/index.css';
+@import './components/FolderSelect/index.css';
+@import './components/Header/index.css';
+@import './components/ImgItems/index.css';
+@import './components/Msg/index.css';
+@import './components/Pagination/index.css';
+
+      </style>
+
+      <style>
+            @import './libs/css/atom.min.css';
+            @import './styles/init.css';
+            @import './styles/index.css';
+            @import './styles/mobile.css';
+      </style>
+
+      <body>
+            <div
+                  id="landing_wrap"
+                  class="landing_wrap w_100vw h_100vh border_box flex justify_center align_center fixed top_0 left_0 z_index_1000 bg_white transition_normal"
+            >
+                  <div class="landing flex flex_column align_center">
+                        <img
+                              class="logo_landing"
+                              src="./images/logo_picpic_black.png"
+                              alt="logo_picpic_black"
+                        >
+                  </div>
+            </div>
+            <div
+                  id="app"
+                  style="opacity: 0;"
+            >
+                  <div class="header_wrap_placeholder w_100"></div>
+                  <x-header></x-header>
+                  <x-img-items></x-img-items>
+                  <x-empty></x-empty>
+                  <x-detail></x-detail>
+                  <x-pagination></x-pagination>
+                  <x-msg></x-msg>
+                  <x-folder-select></x-folder-select>
+
+                  <include src="./components/Detail/index.html"></include>
+<include src="./components/Empty/index.html"></include>
+<include src="./components/FolderSelect/index.html"></include>
+<include src="./components/Header/index.html"></include>
+<include src="./components/ImgItems/index.html"></include>
+<include src="./components/Msg/index.html"></include>
+<include src="./components/Pagination/index.html"></include>
+
+            </div>
+      </body>
+
+      <script src='./libs/js/vue.min.js'></script>
+      <script src='./libs/js/lodash.chunk.js'></script>
+      <script src='./libs/js/lodash.throttle.js'></script>
+      <script src='./libs/js/clipboard.js'></script>
+      <script src='./index.js'></script>
+
+      <script src="./components/Detail/index.js"></script>
+<script src="./components/Empty/index.js"></script>
+<script src="./components/FolderSelect/index.js"></script>
+<script src="./components/Header/index.js"></script>
+<script src="./components/ImgItems/index.js"></script>
+<script src="./components/Msg/index.js"></script>
+<script src="./components/Pagination/index.js"></script>
+
+
+</html>
